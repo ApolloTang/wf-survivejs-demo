@@ -5,8 +5,6 @@ module.exports = function() {
 
     element.innerHTML = 'button 1';
     element.className = styles.redButton;
-
     console.log(styles.redButton)
-
     return element;
 }
