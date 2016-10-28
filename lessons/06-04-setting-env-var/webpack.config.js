@@ -46,7 +46,10 @@ switch(process.env.npm_lifecycle_event) {
 
             parts.setFreeVariable( 'test.env.NODE_ENV', 'PRODUCTION'),            //@ test.env.NODE_ENV    will be available in your code with value 'PRODUCTION'
             parts.setFreeVariable( 'test.env.FOO', 'FOO_VALUE'),                  //@ test.env.FOO         will be available in your code with value 'FOO_VALUE'
+
             parts.setFreeVariable( 'process.env.NODE_ENV', process.env.NODE_ENV), //@ process.env.NODE_ENV will be available in your code with value defined in sh variable NODE_ENV
+            //@ execute 'export NODE_ENV=production' in bash shell will have webpack evoked gzip
+
 
             parts.minify(),
             parts.setupCSS(PATHS.app)
