@@ -26,6 +26,7 @@ const common = {
     },
     output: {
         path: PATHS.build,
+        //@ [name] will be the entry's attribute's keys
         filename: '[name].js'
     },
     plugins: [
