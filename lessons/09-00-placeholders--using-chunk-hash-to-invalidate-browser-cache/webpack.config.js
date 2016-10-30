@@ -26,11 +26,11 @@ const common = {
     },
     output: {
         path: PATHS.build,
+
         //@ [name] will be the entry's attribute's keys
-        //@ chunkhash track the content of file, thus yo can
-        //@ chunkhash to invalidate browser's cached
-        filename: '[name].[chunkhash].js?'
-        //filename: '[name].js?[chunkhash]' //@ invalid browser's cache via query string is less performant
+        //@ [chunkhash] tracks the content of file, so use it to invalidate browser's cached.
+        filename: '[name].[chunkhash].js'
+        //filename: '[name].js?[chunkhash]' //@ Invalid browser's cache via query string is less performant, so don't use this
     },
     plugins: [
         new HtmlWebpackPlugin({
