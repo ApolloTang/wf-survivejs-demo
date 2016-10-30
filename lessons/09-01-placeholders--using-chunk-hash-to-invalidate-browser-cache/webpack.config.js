@@ -24,6 +24,7 @@ const common = {
         app: PATHS.app,
         // vendor: ['react'] //@ relocate this to case: 'build': parts.extractBundle
     },
+
     output: {
         path: PATHS.build,
 
@@ -31,7 +32,11 @@ const common = {
         //@ [chunkhash] tracks the content of file, so use it to invalidate browser's cached.
         filename: '[name].[chunkhash].js'
         //filename: '[name].js?[chunkhash]' //@ Invalid browser's cache via query string is less performant, so don't use this
+
+        //@ This is used for require.ensure. (Not sure how this work thou...)
+        chunkFilename: '[chunkhash].js'
     },
+
     plugins: [
         new HtmlWebpackPlugin({
             title: '01-00 Webpack demo'
