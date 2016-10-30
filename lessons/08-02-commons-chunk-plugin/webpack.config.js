@@ -26,7 +26,7 @@ const common = {
     },
     output: {
         path: PATHS.build,
-        //@ [name] will be the entry's attribute's keys
+        //@ [name] will be the entry's attribute's keys or name key specified to options pass to commonChunkPlugin
         filename: '[name].js'
     },
     plugins: [
