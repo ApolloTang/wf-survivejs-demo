@@ -30,7 +30,7 @@ const common = {
 
         //@ [name] will be the entry's attribute's keys
         //@ [chunkhash] tracks the content of file, so use it to invalidate browser's cached.
-        filename: '[name].[chunkhash].js'
+        filename: '[name].[chunkhash].js',
         //filename: '[name].js?[chunkhash]' //@ Invalid browser's cache via query string is less performant, so don't use this
 
         //@ This is used for require.ensure. (Not sure how this work thou...)
