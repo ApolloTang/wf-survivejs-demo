@@ -75,8 +75,8 @@ switch(process.env.npm_lifecycle_event) {
 
             //@ With 'parts.setpuCSS' bellow, css is injected by javascript.
             // parts.setupCSS(PATHS.app)
-            //@ To have css push into a separate file, the above is
-            //@ replaced by using ExtractTextPlugin
+            //@ To avoid FOUC (flash of unstyle content), css need to push into a separate file, so
+            //@ the above is replaced by using ExtractTextPlugin
             parts.extractCSS(PATHS.app)
         );
     break;

@@ -145,6 +145,7 @@ exports.extractBundle = function(options) {
 exports.clean = function(path) {
     return {
         plugins: [
+            // Clean Webpack will clear the build folder before each build
             new CleanWebpackPlugin([path], {
                 //@ root point to the project directory
                 root: process.cwd()
