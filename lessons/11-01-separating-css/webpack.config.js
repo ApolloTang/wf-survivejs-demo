@@ -72,7 +72,12 @@ switch(process.env.npm_lifecycle_event) {
             // parts.clean( path.join(PATHS.build, '*') ),
 
             parts.minify(),
-            parts.setupCSS(PATHS.app)
+
+            //@ With 'parts.setpuCSS' bellow, css is injected by javascript.
+            // parts.setupCSS(PATHS.app)
+            //@ To have css push into a separate file, the above is
+            //@ replaced by using ExtractTextPlugin
+            parts.extractCSS(PATHS.app)
         );
     break;
 
@@ -80,7 +85,7 @@ switch(process.env.npm_lifecycle_event) {
         config = merge(
             common,
             {
-                //@ Will generate inline sourcemap for better performance
+                //@ Will generate inline source map for better performance
                 devtool: 'eval-source-map'
             },
 
