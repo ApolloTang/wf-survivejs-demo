@@ -1,0 +1,12 @@
+body {
+    background: lime;
+}
+
+.redButton {
+    background: blue;
+}
+
+/* :local(.redButton) { */
+/*     background: red; */
+/* } */
+
