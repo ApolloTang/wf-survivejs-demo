@@ -1,8 +1,12 @@
 body {
-    background: lime;
+    background: #eee;
 }
 
-.redButton {
+button {
+    background: yellow;
+}
+
+button.redButton {
     background: red;
 }
 
