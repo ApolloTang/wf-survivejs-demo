@@ -1,0 +1,16 @@
+> webpack-dev-server
+
+ http://localhost:8080/
+webpack result is served from /
+content is served from /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/11-01-separating-css
+404s will fallback to /index.html
+
+ERROR in chunk app [entry]
+[name].[chunkhash].js
+Cannot use [chunkhash] for chunk in '[name].[chunkhash].js' (use [hash] instead)
+Child html-webpack-plugin for "index.html":
+
+webpack: bundle is now VALID.
+
+
+
