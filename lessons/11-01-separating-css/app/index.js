@@ -1,4 +1,5 @@
 var component = require('./component');
+var component2 = require('./component2');
 require('./main.css');
 require('react');
 
@@ -14,3 +15,4 @@ console.log('Constants.process_env_NODE_ENV: ', Constants.process_env_NODE_ENV);
 
 
 document.body.appendChild(component());
+document.body.appendChild(component2());

@@ -3,7 +3,7 @@ body {
 }
 
 .redButton {
-    background: blue;
+    background: red;
 }
 
 /* :local(.redButton) { */
