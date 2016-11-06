@@ -1,0 +1,50 @@
+> 01-00-names@1.0.0 build /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/12-01-eliminating-unsued-css
+> webpack
+
+clean-webpack-plugin: /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/12-01-eliminating-unsued-css/build has been removed.
+Hash: e8273b019c430f2d446f
+Version: webpack 1.13.2
+Time: 5695ms
+                               Asset       Size  Chunks             Chunk Names
+     app.e8273b019c430f2d446f.js.map    3.09 kB    0, 3  [emitted]  app
+         app.e8273b019c430f2d446f.js  454 bytes    0, 3  [emitted]  app
+      vendor.e8273b019c430f2d446f.js    41.6 kB    2, 3  [emitted]  vendor
+    manifest.e8273b019c430f2d446f.js  957 bytes       3  [emitted]  manifest
+      style.c995391229f88c8489b1.css  122 bytes    1, 3  [emitted]  style
+       style.e8273b019c430f2d446f.js  296 bytes    1, 3  [emitted]  style
+   style.e8273b019c430f2d446f.js.map  897 bytes    1, 3  [emitted]  style
+  style.c995391229f88c8489b1.css.map  107 bytes    1, 3  [emitted]  style
+  vendor.e8273b019c430f2d446f.js.map     339 kB    2, 3  [emitted]  vendor
+manifest.e8273b019c430f2d446f.js.map    8.65 kB       3  [emitted]  manifest
+                          index.html  487 bytes          [emitted]
+   [0] ./app/index.js 621 bytes {0} [built]
+   [0] multi vendor 28 bytes {2} [built]
+   [0] multi style 40 bytes {1} [built] [1 error]
+   [1] ./app/component.js 263 bytes {0} [built]
+    + 38 hidden modules
+
+ERROR in ../~/purecss/build/pure-min.css
+Module parse failed: /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/purecss/build/pure-min.css Unexpected token (11:64)
+You may need an appropriate loader to handle this file type.
+SyntaxError: Unexpected token (11:64)
+    at Parser.pp$4.raise (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:2221:15)
+    at Parser.pp.unexpected (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:603:10)
+    at Parser.pp.semicolon (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:581:61)
+    at Parser.pp$1.parseExpressionStatement (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:966:10)
+    at Parser.pp$1.parseStatement (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:730:24)
+    at Parser.pp$1.parseTopLevel (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:638:25)
+    at Parser.parse (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:516:17)
+    at Object.parse (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/acorn/dist/acorn.js:3098:39)
+    at Parser.parse (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/webpack/lib/Parser.js:902:15)
+    at DependenciesBlock.<anonymous> (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/webpack/lib/NormalModule.js:104:16)
+    at DependenciesBlock.onModuleBuild (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/webpack-core/lib/NormalModuleMixin.js:310:10)
+    at nextLoader (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/webpack-core/lib/NormalModuleMixin.js:275:25)
+    at /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/webpack-core/lib/NormalModuleMixin.js:259:5
+    at Storage.finished (/Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:38:16)
+    at /Users/apollotang/Desktop/current/wf-survivejs-demo/lessons/node_modules/graceful-fs/graceful-fs.js:78:16
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+ @ multi style
+Child html-webpack-plugin for "index.html":
+        + 3 hidden modules
+Child extract-text-webpack-plugin:
+        + 2 hidden modules
